@@ -8,8 +8,6 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 40% 60%;
-    /* border: 2px solid blue; */
-    /* background-color: antiquewhite; */
     position: relative;
     box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.3);
 }
@@ -31,7 +29,7 @@ h3{
     /* border: 2px solid orange; */
     z-index: 2;
     width: 80%;
-    height: 25%;
+    height: 20%;
     padding: 1%;
 }
 .header-container{
@@ -48,33 +46,25 @@ h3{
     top: 2%;
     z-index: 1;
 }
-.headTitle{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    /* border: 2px solid green; */
-    z-index: 7;
-}
+
 .titleName{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5%;  
-    color: black;
-    /* border: 2px solid red; */
+    padding: 5%;
 }
 
 .about{
    padding: 1%;
 }
 
-.photo img{
-    border-radius: 50%;
-    position: absolute;
-    left: -10%;
-    top: 20%;
+.photo {
+    float: left;
     width: 200px;
     height: 220px;
-    /* margin-left: 10%; */
+    padding: 3px;
+    shape-outside: circle(100% );
+    clip-path: circle(46% );
+    /* margin-right: 5px;  */
+    margin-top: -25%;
+    margin-left: -25%;
 }
 .p_size22{
     font-size: 26px;
@@ -257,4 +247,61 @@ h3{
     box-shadow: 0 0 0.5;
 }
 
-
+/* ======= MEDIA ======= */
+@media(max-width:990px){
+ .wrapper{
+    display:flex;
+    flex-direction: column;
+ }
+ .container-language{
+    top: 0.5%;
+ }
+.header{
+    max-width: 95%;
+    height: 10%;
+    padding: 1%;
+    position: relative;
+    margin-top: 10%;
+    margin-left: -10%;
+ }
+ 
+  .contact{
+    margin-top: 5%;
+    gap: 2px;
+ } 
+ .icon{
+    padding: 1px;
+ }
+ .skills ul>li{
+    margin-top: 0;
+ }
+ .languace ul>li{
+    gap: 0;
+ }
+ .univer{
+    gap: 0;
+ }
+ .experience{
+    margin-top: -15%;
+ }
+ .education .univer{
+    margin-top: 1%;
+ }
+ .education{
+    margin-bottom: 5%;
+ }
+}
+@media(max-width:675px){
+    .photo img{
+        float:left;
+        shape-outside: circle(50%);
+        /* left: -15%;
+        top: -10%; */
+        margin-right: 20px;
+    }
+    .headTitle {
+        display: flex;
+        overflow: hidden; 
+        /* z-index: ; */
+    }
+}
