@@ -70,9 +70,10 @@ h3{
 .photo img{
     border-radius: 50%;
     position: absolute;
-    left: -12%;
-    top: 10%;
-    max-width: 250px;
+    left: -10%;
+    top: 20%;
+    width: 200px;
+    height: 220px;
     /* margin-left: 10%; */
 }
 .p_size22{
@@ -129,6 +130,10 @@ h3{
 .icon img{
     width: 30px;
     height: 25px;
+}
+.linkedin img{
+    width: 30px;
+    height: 40px;
 }
 
 .telephone, .adress, .email{
